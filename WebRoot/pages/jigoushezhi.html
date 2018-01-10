@@ -1,0 +1,273 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>毕业生就业管理系统</title>
+<link href="../css/reset.css" rel="stylesheet" type="text/css" />
+<link href="../css/main.css" rel="stylesheet" type="text/css" />
+<link href="../css/sub.css" rel="stylesheet" type="text/css" />
+<!--主要的样式-->
+
+<!--导航特效-->
+<script type="text/javascript" src="../js/jquery-1.js"></script>
+<script type="text/javascript" src="../js/smartmenu-min.js"></script>
+<script type="text/javascript">
+	jQuery(window).ready(function() {
+		jQuery("#navigation").Smartmenu({
+			animationDuration : 350
+		});
+	});
+	//SyntaxHighlighter.all();
+</script>
+<!--导航特效end-->
+<script language="javascript">
+	var Obj = ''
+	document.onmouseup = MUp
+	document.onmousemove = MMove
+
+	function MDown(Object) {
+		Obj = Object.id
+		document.all(Obj).setCapture()
+		pX = event.x - document.all(Obj).style.pixelLeft;
+		pY = event.y - document.all(Obj).style.pixelTop;
+	}
+
+	function MMove() {
+		if (Obj != '') {
+			document.all(Obj).style.left = event.x - pX;
+			document.all(Obj).style.top = event.y - pY;
+		}
+	}
+
+	function MUp() {
+		if (Obj != '') {
+			document.all(Obj).releaseCapture();
+			Obj = '';
+		}
+	}
+</script>
+<style type="text/css">
+#massage_box {
+	position: absolute;
+	background: #fff url("../images/headerbg.jpg") repeat-x;
+	left: 300px;
+	top: 49px;
+	width: 775px;
+	height: 486px;
+	filter: dropshadow(color =     #666666, offx =     3, offy =     3, positive =
+		    2);
+	z-index: 2;
+	visibility: hidden; /* border-top:3px #ea820e solid;*/
+	padding-top: 3px;
+}
+
+#mask {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: expression(body.scrollWidth);
+	height: expression(body.scrollHeight);
+	filter: ALPHA(opacity =     60);
+	z-index: 1;
+	visibility: hidden
+}
+
+.massage { /*border:#036 solid; border-width:1 1 3 1;*/
+	width: 100%;
+	height: 100%;
+	color: #036;
+	font-size: 12px;
+	line-height: 150%
+}
+
+.header {
+	color: #fff
+}
+
+#massage_box ul {
+	margin-right: 25;
+	float: left;
+	display: block;
+}
+
+#massage_box ul li {
+	padding-left: 70px;
+	font: 12px/24px Candara;
+	color: #093079;
+}
+
+#massage_box ul li strong {
+	height: 47px;
+	font: bold 14px/47px Candara;
+	color: #093079
+}
+
+#massage_box ul li a {
+	color: #093079;
+	font: 12px/24px Candara;
+	text-decoration: none;
+	padding-left: 9px;
+}
+
+#massage_box ul li a:hover {
+	color: #e37006;
+	font: 12px/24px Candara;
+	text-decoration: none;
+	background: url("../images/submenulihover.png"/) left center no-repeat;
+	padding-left: 9px;
+}
+
+table {
+	font: arial;
+	font-size: 16px;;
+	height: 80%;
+	width: 80%; /*  必须设置一个宽度， margin: 0 auto才能使之居于父组件中央*/
+	margin: 0px auto; /*  通过设置外边距（margin）中的左右外边距属性为auto使之居于父组件（body）中间*/
+}
+
+table tr {
+	height: 40px;
+	width: 100%;
+}
+</style>
+</head>
+<body>
+	<div id="head">
+		<div class="headcontent">
+			<div id="sbmlogo"></div>
+			<div>
+				<p>毕业生就业管理系统</p>
+			</div>
+			<div class="topright">
+				<div class="clear"></div>
+				<div id="navigation" class="smartmenu">
+					<ul>
+						<li><a href="index.html" class="current">首页</a>
+						</li>
+						<li id=""><a href="zhongxingaikuang.html">中心概况</a>
+							<ul>
+								<li><a href="xianrenlingdao.html">现任领导</a>
+								</li>
+								<li><a href="jigoushezhi.html">机构设置</a>
+								<li><a href="gongzuozhize.html">工作职责</a>
+								</li>
+							</ul></li>
+						<li id=""><a href="../government">政策信息</a></li>
+						<li id=""><a href="../list">招聘信息</a></li>
+						<li id=""><a href="jigoushezhi.html">用户登录</a>
+							<ul>
+								<li><a href="adminLogin.jsp">管理员登录</a>
+								</li>
+								<li><a href="compLogin.jsp">企业登录</a>
+								</li>
+								<li><a href="stuLogin.jsp">学生登录</a>
+								</li>
+							</ul></li>
+					</ul>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+
+
+	<div id="body" style="background:none">
+		<div class="subbanner"
+			style="background:url(../images/xinong.png) top center repeat-x;">
+			<div class="subbannercontent"
+				style=" width:100%;background:url(../images/supportbg.jpg) top center no-repeat;">
+				<div class="subbody" style="padding-top:31px;">
+					<div class="subbodyleft">
+						<ul>
+							<li class="firstli">中心概况</li>
+							</li>
+							<li><a href="xianrenlingdao.html">现任领导</a>
+							</li>
+							<li><a href="jigoushezhi.html">机构设置</a>
+							</li>
+							<li><a href="gongzuozhize.html">工作职责</a>
+							</li>
+						</ul>
+						<div class="follows"></div>
+					</div>
+
+					<div class="subbodyright">
+						<div class="location" style="line-height:30px;">
+							<a href="index.html">首页</a> -<a href="zhongxingaikuang.html">中心概况</a>
+						</div>
+						<h2>机构设置</h2>
+						<div class="post" id="post-262">
+							<div class="newscontent">
+								<div class="entry">
+									<table align="center">
+										<tr>
+											<td colspan="3">就业指导中心办公室</td>
+										</tr>
+										<tr>
+											<td>秘书</td>
+											<td>朱若晨</td>
+											<td>电话：029-87082014</td>
+										</tr>
+										<tr>
+											<td colspan="3">就业指导中心市场部</td>
+										</tr>
+										<tr>
+											<td>部长</td>
+											<td>陈长友</td>
+											<td></td>
+										</tr>
+										<tr>
+											<td>科员</td>
+											<td>闫金姣</td>
+											<td>电话：029-87082460</td>
+										</tr>
+										<tr>
+											<td colspan="3">就业指导中心信息部</td>
+										</tr>
+										<tr>
+											<td>部长</td>
+											<td>靳 &nbsp;&nbsp;&nbsp;红</td>
+											<td>电话：029-87082036</td>
+										</tr>
+										<tr>
+											<td colspan="3">就业指导中心指导部</td>
+										</tr>
+										<tr>
+											<td>部长</td>
+											<td>刘 &nbsp;&nbsp;&nbsp;淼</td>
+											<td>电话：029-87082715</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+							<div class="navigation">
+								<div class="alignleft"></div>
+							</div>
+
+						</div>
+						<div class="bottomhelp"></div>
+						<h3></h3>
+						<div class="clear"></div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
+
+
+	<div id="footer" class="subfooter"
+		style="top:150px; background:url(../images/subfooterbg.png) bottom center repeat-x;">
+		<div class="footercontent">
+			<div class="share">
+				<a href="#" class="top"></a>
+			</div>
+			<div class="links">Copyright © 2016校企实训J2EE-21小组. All rights
+				reserved</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="default" extends="struts-default" namespace="/">
+		<!--<action name="homePage"> <result>WEB-INF/view/adminIndex.jsp</result> 
+			</action> -->
+		<action name="randomCode" class="cn.edu.action.TestAction">
+        </action>
+		<action name="studentList">
+			<result>/WEB-INF/view/adminCheckStuList.jsp</result>
+		</action>
+		<action name="compList" class="cn.edu.action.companyAction"
+			method="find">
+			<result name="toCompanyList">/WEB-INF/view/adminCheckCompList.jsp</result>
+		</action>
+
+		<action name="toDelete" class="cn.edu.action.companyAction"
+			method="delect">
+			<result name="compList">WEB-INF/view/adminCheckCompList.jsp</result>
+		</action>
+
+		<action name="showCompany" class="cn.edu.action.companyAction"
+			method="findOne">
+			<result name="toshowCompany">WEB-INF/view/adminCheckCompContent.jsp</result>
+		</action>
+
+		<action name="jobList" class="cn.edu.action.JobContextAction"
+			method="find">
+			<result name="toJobList">/WEB-INF/view/adminExamJobList.jsp</result>
+		</action>
+		<action name="toJobDelect" class="cn.edu.action.JobContextAction"
+			method="delect">
+			<result name="jobList">WEB-INF/view/adminExamJobList.jsp</result>
+		</action>
+		<action name="showJob" class="cn.edu.action.JobContextAction"
+			method="findOne">
+			<result name="toshowJob">WEB-INF/view/adminExamJobContent.jsp</result>
+		</action>
+		<action name="tocount">
+			<result>WEB-INF/view/adminCountEmployee.jsp</result>
+		</action>
+		<action name="show">
+			<result>WEB-INF/view/showCount.jsp</result>
+		</action>
+		<!-- 前端用到的ACTION -->
+		<action name="list" class="cn.edu.action.JobContextAction"
+			method="find">
+			<result name="toJobList">pages/jobList.jsp</result>
+		</action>
+		<action name="showjob1" class="cn.edu.action.JobContextAction"
+			method="findOne">
+			<result name="toshowJob">pages/jobDetail.jsp</result>
+		</action>
+		<action name="government" class="cn.edu.action.AdminManNoteListAction"
+			method="">
+			<result name="success">pages/policeList.jsp</result>
+			<result name="input">/WEB-INF/view/error.jsp</result>
+		</action>
+		<action name="policeContext" class="cn.edu.action.AdminManNoticeContextAction"
+			method="">
+			<result name="success">pages/policeDetail.jsp
+			</result>
+		</action>
+	</package>
+
+
+
+
+
+
+
+	<package name="default1" namespace="/page" extends="struts-default">
+		<!-- 验证管理员登录 -->
+		<action name="adminLogin" class="cn.edu.action.CheckAdminAction"
+			method="">
+			<result name="success">/WEB-INF/view/adminIndex.jsp</result>
+			<result name="input">/pages/adminLoginFalse.jsp</result>
+		</action>
+		<!-- 管理员按条件查询学生信息 -->
+		<action name="adminSearchStu">
+			<result>/WEB-INF/view/adminSearchStu.jsp</result>
+		</action>
+		<action name="SearchStu" class="cn.edu.action.AdminSearchStuAction"
+			method="">
+			<result name="success">/WEB-INF/view/adminCheckStuList.jsp</result>
+			<result name="input">/WEB-INF/view/adminSearchStu.jsp</result>
+		</action>
+		<!-- 管理员查看学生详情页面 -->
+		<action name="searchStuDetail" class="cn.edu.action.AdminsearchStuDetailAction"
+			method="">
+			<result name="success">/WEB-INF/view/adminCheckStuContent.jsp</result>
+		</action>
+		<action name="studentDelete" class="cn.edu.action.AdminStuDeleteAction"
+			method="">
+			<result name="success">/WEB-INF/view/adminSearchStu.jsp</result>
+			<result name="input">/WEB-INF/view/error.jsp</result>
+		</action>
+		<!-- 管理员管理公告信息 -->
+		<!-- 查看公告列表 -->
+		<action name="AdminManNoteList" class="cn.edu.action.AdminManNoteListAction"
+			method="">
+			<result name="success">/WEB-INF/view/adminManageNoticeList.jsp</result>
+			<result name="input">/WEB-INF/view/error.jsp</result>
+		</action>
+		<!-- 查看公告内容 -->
+		<action name="AdminManNotecontext" class="cn.edu.action.AdminManNoticeContextAction"
+			method="">
+			<result name="success">/WEB-INF/view/adminManageNoticeContent.jsp
+			</result>
+		</action>
+		<!-- 添加公告信息 -->
+		<action name="adminManNoteInsert">
+			<result>/WEB-INF/view/adminManageNoticeInsert.jsp</result>
+		</action>
+		<action name="adminNoticeInsert" class="cn.edu.action.AdminManNoticeInsertAction"
+			method="">
+			<result name="success" type="redirectAction">
+				<param name="actionName">AdminManNoteList</param>
+				<param name="namespace">/page</param>
+			</result>
+			<result name="input">/WEB-INF/view/error.jsp</result>
+		</action>
+		<!-- 删除公告信息 -->
+		<action name="adminDelNotice" class="cn.edu.action.AdminManNoticeDeleteAction"
+			method="">
+			<result name="success" type="redirectAction">
+				<param name="actionName">AdminManNoteList</param>
+				<param name="namespace">/page</param>
+			</result>
+		</action>
+		<!-- 更新公告信息 -->
+		<action name="adminUpdateNotice" class="cn.edu.action.AdminManNoticeUpdateAction"
+			method="findPolicy">
+			<result name="success">/WEB-INF/view/adminManageNoticeUpdate.jsp
+			</result>
+			<result name="input">/WEB-INF/view/error.jsp</result>
+		</action>
+		<action name="noticeUpdate" class="cn.edu.action.AdminManNoticeUpdateAction"
+			method="">
+			<result name="success" type="redirectAction">
+				<param name="actionName">AdminManNoteList</param>
+				<param name="namespace">/page</param>
+			</result>
+			<result name="input">/WEB-INF/view/error.jsp</result>
+		</action>
+		<action name="adminToUpMultiFileAction" class="cn.edu.action.AdminToUpMultiFileAction">
+			<result name="success">/WEB-INF/view/adminUpMultiFile.jsp</result>
+		</action>
+
+		<action name="multiFile" class="cn.edu.action.MultiFileAction">
+			<result name="success">/upload/success.jsp</result>
+
+			<!-- 定义上传出错要转向的页面 -->
+			<result name="input">/upload/error.jsp</result>
+			<interceptor-ref name="fileUpload"><!-- 配置fileUpload拦截器 -->
+				<param name="maximumSize">11048576</param><!-- 配置允许上传文件大小最大值 -->
+				<param name="allowedExtensions">.jpg,.png</param><!-- 配置允许上传文件类型 -->
+			</interceptor-ref>
+			<interceptor-ref name="defaultStack"></interceptor-ref>
+		</action>
+
+		<action name="adminLogoutAction" class="cn.edu.action.AdminLogoutAction">
+			<result name="success">/pages/adminLoginLogout.jsp</result>
+		</action>
+
+		<!-- 学生的相关Action -->
+		<action name="studentLogin" class="cn.edu.action.StudentLoginAction">
+			<result name="success">/WEB-INF/view/stuIndex.jsp</result>
+			<result name="input">/pages/stuLoginFalse.jsp</result>
+		</action>
+
+		<action name="studentPreviewResume" class="cn.edu.action.StudentPreviewResumeAction">
+			<result name="success">/WEB-INF/view/stuPreviewResume.jsp</result>
+		</action>
+
+		<action name="studentRegist" class="cn.edu.action.StudentRegistAction">
+			<result name="success">/WEB-INF/view/stuIndex.jsp</result>
+			<result name="input">/pages/stuRegist.jsp</result>
+			<result name="alreadyexit">/pages/stuRegistFalseE.jsp</result>
+			<result name="NotEquale">/pages/stuRegistFalse.jsp</result>
+		</action>
+
+		<action name="studentJobList" class="cn.edu.action.StuJobListAction">
+			<result name="success">/WEB-INF/view/stuCheckJobList.jsp</result>
+		</action>
+
+		<action name="studentJobContent" class="cn.edu.action.StudentJobContentAction">
+			<result name="success">/WEB-INF/view/stuCheckJobContent.jsp</result>
+		</action>
+		<action name="studentUpdateResumeAction" class="cn.edu.action.StuUpdateResumeAction">
+			<result name="success">/WEB-INF/view/stuUpdateResumeSuccess.jsp</result>
+			<result name="input">/WEB-INF/view/stuUpdateResume.jsp</result>
+		</action>
+
+		<action name="studentToUpdateResumeAction" class="cn.edu.action.StuToUpdateResumeAction">
+			<result name="success">/WEB-INF/view/stuUpdateResume.jsp</result>
+		</action>
+
+		<action name="studentResumeJobListAction" class="cn.edu.action.StuResumeJobListAction">
+			<result name="success">/WEB-INF/view/stuSendResume.jsp</result>
+		</action>
+
+		<action name="studentSendResumeAction" class="cn.edu.action.StudentSendResumeAction">
+			<result name="success">/WEB-INF/view/stuSendResumeSuccess.jsp</result>
+			<result name="false">/WEB-INF/view/stuSendResumeFalse.jsp</result>
+		</action>
+
+		<action name="studentLogoutAction" class="cn.edu.action.StudentLogoutAction">
+			<result name="success">/pages/stuLoginLogout.jsp</result>
+		</action>
+
+		<action name="studentToWriteJobInfo" class="cn.edu.action.StudentToWriteJobInfoAction">
+			<result name="success">/WEB-INF/view/stuWriteJobInfo.jsp</result>
+		</action>
+
+		<action name="stuWriteJobInfo" class="cn.edu.action.StuWriteJobInfoAction">
+			<result name="success">/WEB-INF/view/stuWriteJobInfoSuccess.jsp</result>
+		</action>
+
+		<!-- 公司相关的Action -->
+		<action name="companyLogin" class="cn.edu.action.CompanyLoginAction">
+			<result name="success">/WEB-INF/view/comIndex.jsp</result>
+			<result name="input">/pages/compLoginFalse.jsp</result>
+		</action>
+
+		<action name="companyPreviewInfoAction" class="cn.edu.action.CompanyPreviewInfoAction">
+			<result name="success">/WEB-INF/view/compCompleteInfo.jsp</result>
+		</action>
+
+		<action name="companyPompleteInfo" class="cn.edu.action.CompanyCompleteInfoAction">
+			<result name="success">/WEB-INF/view/compCompleteInfoSuccess.jsp
+			</result>
+		</action>
+
+		<action name="compFindJobList" class="cn.edu.action.CompanyManageJobAction"
+			method="findAllJobList">
+			<result name="comJobList">/WEB-INF/view/compManageJob.jsp</result>
+		</action>
+		<action name="compJobContent" class="cn.edu.action.CompanyManageJobAction"
+			method="findOne">
+			<result name="jobOne">/WEB-INF/view/compCheckJobContent.jsp</result>
+		</action>
+		<action name="compTobToInsert" class="cn.edu.action.CompanyManageJobAction"
+			method="toInsert">
+			<result name="toInsert">/WEB-INF/view/compPostJob.jsp</result>
+		</action>
+		<action name="compTobInsert" class="cn.edu.action.CompanyManageJobAction"
+			method="insertJob">
+			<result name="insert">/WEB-INF/view/compManageJob.jsp
+			</result>
+		</action>
+		<action name="compJobDelete" class="cn.edu.action.CompanyManageJobAction"
+			method="deleteJob">
+			<result name="deleteJob">/WEB-INF/view/compManageJob.jsp</result>
+		</action>
+		<action name="toUpdateJob" class="cn.edu.action.CompanyManageJobAction"
+			method="findOne">
+		<result name="jobOne">/WEB-INF/view/compUpdateJob.jsp</result>
+		</action>
+		<action name="compUpdatsJob" class="cn.edu.action.CompanyManageJobAction" method="updateJob">
+			<result name="updateJob">/WEB-INF/view/compManageJob.jsp</result>
+		</action>
+		<action name="compCheckStudentList" class="cn.edu.action.CompCheckStudentAction">
+			<result name="success">/WEB-INF/view/compCheckStuList.jsp</result>
+		</action>
+		<action name="compCheckStuResume" class="cn.edu.action.CompCheckStuResume">
+			<result name="success">/WEB-INF/view/CompStuPreviewResume.jsp</result>
+		</action>
+		<action name="compLogoutAction" class="cn.edu.action.CompLogoutAction">
+			<result name="success">/pages/compLoginLogout.jsp</result>
+		</action>
+		
+		<action name="companyRegist" class="cn.edu.action.CompanyRegistAction">
+			<result name="success">/WEB-INF/view/comIndex.jsp</result>
+			<result name="input">/pages/compRegist.jsp</result>
+			<result name="alreadyexit">/pages/compRegistFalseE.jsp</result>
+			<result name="NotEquale">/pages/compRegistFalse.jsp</result>
+		</action>
+	</package>
+
+
+	<package name="chart" extends="jfreechart-default" namespace="/">
+		<action name="chart1" class="cn.edu.action.countAction" method="totalCount">
+			<result name="success" type="chart">
+				<param name="width">500</param>
+				<param name="height">300</param>
+			</result>
+		</action>
+		<action name="chart2" class="cn.edu.action.MajorcountAction"
+			method="totalCount">
+			<result name="success" type="chart">
+				<param name="width">400</param>
+				<param name="height">300</param>
+			</result>
+		</action>
+		<action name="chart3" class="cn.edu.action.sexCountAction"
+			method="totalCount">
+			<result name="success" type="chart">
+				<param name="width">500</param>
+				<param name="height">400</param>
+			</result>
+		</action>
+	</package>
+
+</struts>    

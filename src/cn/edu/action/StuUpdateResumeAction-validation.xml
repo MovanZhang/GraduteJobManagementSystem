@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC
+             "-//Apache Struts//XWork Validator 1.0.3//EN"
+             "http://struts.apache.org/dtds/xwork-validator-1.0.3.dtd">
+<validators>
+	<field name="tbStudent.stuIdNum">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message key="身份证号不能为空"></message>
+		</field-validator>
+		<field-validator type="stringlength">
+			<param name="minLength">18</param>
+			<param name="maxLength">18</param>
+			<message>身份证号长度为18个字符</message>
+		</field-validator>
+	</field>
+</validators>  

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC
+             "-//Apache Struts//XWork Validator 1.0.3//EN"
+             "http://struts.apache.org/dtds/xwork-validator-1.0.3.dtd">
+<validators>
+
+	<field name="tbStudent.stuId">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message key="学号不能为空"></message>
+		</field-validator>
+	</field>
+
+	<field name="tbStudent.stuName">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message key="姓名不能为空"></message>
+		</field-validator>
+	</field>
+
+	<field name="tbStudent.stuTelephone">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message key="电话不能为空"></message>
+		</field-validator>
+	</field>
+
+	<field name="tbStudent.stuPwd">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message key="密码不能为空"></message>
+		</field-validator>
+		<field-validator type="stringlength">
+			<param name="minLength">6</param>
+			<param name="maxLength">18</param>
+			<message>密码长度应在6到18个字符之间</message>
+		</field-validator>
+	</field>
+
+</validators>  

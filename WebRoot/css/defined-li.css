@@ -1,0 +1,719 @@
+@charset "utf-8";
+/* CSS Document */
+/*contact page css begin*/
+a {
+	color: #000;
+	text-decoration: none;
+}
+a:hover {
+	color: #e57006;
+	text-decoration: none
+}
+.contact-body {
+	background: url("../images/contact_bg.jpg") repeat-x;
+}
+.contact-banner {
+	margin: 0 auto;
+	background: url("../images/contact_banner.jpg") top center no-repeat;
+	height: 442px;
+}
+.contact-content {
+	width: 914px;
+	margin-left: 20px;
+}
+.contact-content .contact-content-head {
+	width: 914px;
+	height: 38px;
+	border-bottom: 2px solid #e57006
+}
+.contact-content .contact-content-head .contact-head-left {
+	float: left;
+	font-size: 28px;
+	font-weight: bold;
+	color: #e57006;
+}
+.contact-content .contact-content-head .contact-head-right {
+	float: right;
+	color: #333;
+}
+.contact-content .contact-content-head .contact-head-right span {
+	color: #e57006;
+}
+.contact-content .contact-content-body {
+	margin-top: 10px;
+}
+.contact-content .contact-content-body h3 {
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 24px;
+	margin-bottom: 10px;
+}
+.contact-content .contact-content-body .contact-content-body-top {
+	height: 230px;
+	border-bottom: 1px dashed #999;
+	color: #333;
+	padding-bottom: 20px;
+}
+.contact-content .contact-content-body .contact-content-body-top .contact-top-left {
+	width: 490px;
+	float: left;
+}
+.contact-content .contact-content-body .contact-content-body-top .contact-top-left h3 {
+	border: 0px;
+}
+.contact-content .contact-content-body .contact-content-body-top .contact-top-left p strong {
+	line-height: 18px;
+	margin: 0px;
+	padding: 0px;
+}
+.contact-content .contact-content-body .contact-content-body-top .contact-top-right {
+	width: 350px;
+	float: left;
+	border-left: 1px dashed #CCC;
+	padding: 0px 0 0 50px;
+}
+.contact-content .contact-content-body .contact-content-body-top .contact-top-right.chat-now {
+	margin: 10px 0 15px 0;
+}
+.contact-content .contact-content-body .contact-content-body-top .contact-top-right .chat-now a {
+	background: url("../images/prodetailbtn.png") no-repeat;
+	width: 154px;
+	height: 22px;
+	display: block;
+	text-indent: -9999px;
+}
+.contact-content .contact-content-body .contact-content-body-top .contact-top-right .chat-now a:hover {
+	background: url("../images/prodetailbtn.png") 0px -22px no-repeat;
+	width: 154px;
+	height: 22px;
+	display: block;
+	text-indent: -9999px;
+}
+.contact-content .contact-content-body .contact-content-body-top .contact-top-right h3 {
+	border: 0px;
+}
+.contact-content .contact-content-body .contact-content-body-top .contact-top-right img {
+	margin-top: 10px;
+}
+.contact-content .contact-content-body p {
+	line-height: 22px;
+}
+.address-head {
+	font-size: 14px;
+	font-weight: bold;
+	color: #1a3c83;
+	padding: 5px 0;
+}
+.contact-content .contact-content-body .contact-content-body-middle {
+}
+.contact-content .contact-content-body .contact-middle-each {
+	float: left;
+	width: 260px;
+	margin: 20px 40px 20px 0;
+}
+/*contact page css end*/
+
+/*inquiry page css begin*/
+.inquiry-content-left {
+	float: left;
+	width: 650px;
+}
+.inquiry-content-left p {
+	line-height: 19px;
+}
+.inquiry-content-left form {
+	margin-bottom: 10px;
+}
+.inquiry-content-left form .submit {
+	background: url("../images/inquiry-submit.jpg") no-repeat;
+	background-color: transparent;
+	border: 0px;
+	width: 112px;
+	height: 26px;
+	cursor: pointer
+}
+.inquiry-content-left .inquiry-content-left-head {
+	font-size: 28px;
+	font-weight: bold;
+	color: #e57006;
+	height: 40px;
+	border-bottom: 2px solid #e57006
+}
+.inquiry-content-left .inquiry-content-left-body {
+}
+.inquiry-content-left .inquiry-content-left-body p {
+	margin: 0px;
+	padding: 0px;
+}
+.inquiry-content-left .inquiry-content-left-body p strong {
+	margin: 0px;
+	padding: 0px;
+}
+.inquiry-content-left .inquiry-left-body-nr1 {
+	border-bottom: 1px solid #CCC;
+	margin: 20px 0;
+	height: 320px;
+}
+.inquiry-content-left .inquiry-nr-des {
+	float: left;
+	width: 410px;
+	margin-left: 20px;
+}
+.inquiry-content-left .inquiry-left-body-nr2 {
+	border-bottom: 1px solid #CCC;
+	margin: 30px 0;
+	height: 360px;
+}
+.inquiry-content-left .inquiry-left-body-nr3 {
+	border-bottom: 1px solid #CCC;
+	margin: 30px 0;
+	height: 270px;
+}
+.inquiry-content-left .inquiry-left-body-nr4 {
+	margin: 30px 0;
+	height: 420px;
+}
+.form-left {
+	width: 120px;
+	height: 30px;
+	line-height: 30px;
+	background-color: #e9eaea;
+	border-right: 1px solid #FFF;
+	text-align: right;
+	padding-right: 20px;
+	vertical-align: top
+}
+.form-right {
+	width: 380px;
+	height: 30px;
+	line-height: 30px;
+	background-color: #f3f3f3;
+	padding-left: 20px;
+	border-right: 1px solid #FFF;
+}
+.form-right div {
+	padding: 8px 0;
+}
+.form-right div img {
+	margin-bottom: 10px;
+}
+.inquiry-content-right {
+	float: left;
+	width: 230px;
+	margin-left: 32px;
+}
+.inquiry-content-right p {
+	line-height: 20px;
+}
+.inquiry-content-right .inquiry-content-right-head {
+	height: 40px;
+	border-bottom: 2px solid #848484;
+}
+.inquiry-content-right .inquiry-content-right-head p {
+	float: right;
+}
+.inquiry-content-right .inquiry-content-right-head p a {
+	color: #999;
+	text-decoration: none
+}
+.inquiry-content-right .inquiry-content-right-head p a:hover {
+	color: #e37006;
+	text-decoration: none
+}
+.inquiry-content-right .inquiry-content-right-head p span {
+	color: #e57006;
+}
+.inquiry-content-right-nr {
+	height: auto;
+	border-bottom: 1px solid #999;
+	color: #646464
+}
+.inquiry-content-right-nr .chat-now {
+	margin: 10px 0 15px 0;
+}
+.inquiry-content-right-nr .chat-now a {
+	background: url("../images/prodetailbtn.png") no-repeat;
+	width: 154px;
+	height: 22px;
+	display: block;
+	text-indent: -9999px;
+}
+.inquiry-content-right-nr .chat-now a:hover {
+	background: url("../images/prodetailbtn.png") 0px -22px no-repeat;
+	width: 154px;
+	height: 22px;
+	display: block;
+	text-indent: -9999px;
+}
+.inquiry-content-right-nr .sidebar-contact {
+	border-top: 2px dotted #CCC;
+	height: auto;
+	padding: 15px 0;
+}
+.inquiry-content-right-nr h4 {
+	font-size: 14px;
+	line-height: 38px;
+	font-weight: bold;
+	padding: 5px 0;
+	color: #2b2b2b;
+}
+a.sidemore {
+	width: 37px;
+	height: 13px;
+	display: block;
+	float: right;
+	color: #999;
+	font: 11px Calibri;
+	text-decoration: none;
+	margin: 11px 0px;
+}
+a.sidemore:hover {
+	width: 37px;
+	height: 13px;
+	display: block;
+	float: right;
+	color: #e37006;
+	text-decoration: none;
+	font: 11px Calibri;) 0px -14px no-repeat;*/
+}
+.inquiry-content-right .inquiry-nr-detail {
+	height: 45px;
+	margin: 8px 0px 20px 0px;
+	color: #646464;
+}
+.inquiry-content-right .inquiry-nr-detail a {
+	color: #646464;
+	font: 12px/18px Calibri;
+	text-decoration: none;
+}
+.inquiry-content-right .inquiry-nr-detail a:hover {
+	color: #e37006;
+	font: 12px/18px Calibri;
+	text-decoration: none;
+}
+.inquiry-content-right .inquiry-nr-detail img {
+	float: left;
+	margin-right: 10px;
+}
+/*inquiry page css end*/
+.inquiry-content-right-nr2 {
+	height: auto;
+}
+.inquiry-content-right-nr2 h4 {
+	font: bold 14px/38px Candara;
+	color: #2b2b2b
+}
+.inquiry-content-right-nr p {
+	color: #646464
+}
+.inquiry-content-right-nr p a {
+	background: url("../images/submenuli.png") left center no-repeat;
+	padding-left: 12px;
+	color: #858585;
+}
+.inquiry-content-right-nr p a:hover {
+	background: url("../images/submenulihover.png") left center no-repeat;
+	padding-left: 12px;
+	color: #e37006;
+}
+/*project page css begin*/
+.project-content-left-head {
+	font-size: 28px;
+	font-weight: bold;
+	color: #e57006;
+	height: 40px;
+}
+.project-content-left-body {
+	margin-left: 23px;
+}
+.project-content-left-body .project-title ul li a {
+	color: #6e6e6e;
+}
+.project-title .current {
+	padding: 0px 30px;
+	float: left;
+	height: 46px;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 46px;
+	background: url("../images/content-title-bg.jpg") repeat-x;
+	border-left: 1px solid #DDD;
+	border-right: 1px solid #DDD;
+	margin: 0 1px;
+}
+.project-title .current a {
+	color: #e57006;
+}
+.project-content-left-body .project-title ul {
+	margin-top: 10px;
+	float: left;
+	display: inline;
+}
+.project-content-left-body .project-title ul li {
+	height: 36px;
+	float: left;
+	padding: 0px 30px;
+	margin: 0 1px;
+	font-size: 14px;
+	line-height: 36px;
+	font-weight: bold;
+	background-color: #dedede;
+}
+.project-main {
+	margin-top: 20px;
+}
+.project-main .project-main-nr {
+	height: 140px;
+	border-bottom: 1px solid #CCC;
+	margin: 24px 0;
+	color: #3b3b3b
+}
+.project-main .project-main-nr img {
+	float: left;
+	border: 1px solid #CCC;
+	padding: 4px;
+}
+.project-main .project-main-nr .project-main-nr-des {
+	width: 450px;
+	float: left;
+	margin-left: 20px;
+}
+.project-main .project-main-nr .project-main-nr-des p {
+	line-height: 22px;
+}
+.project-main .project-main-nr .project-main-nr-des span {
+	color: #898989;
+}
+.project-main .project-main-nr .project-main-nr-des h3 {
+	font-size: 14px;
+	font-weight: bold;
+}
+#project-body {
+	background: url("../images/project-case/project-bg.jpg") repeat-x
+}
+#project-body #project-content {
+	background: url("../images/project-case/project-banner.jpg") top center no-repeat;
+	height: auto;
+}
+#project-body #project-content .projectbody-head {
+	width: 960px;
+	margin: auto;
+	height: 30px;
+	line-height: 30px;
+}
+#project-body #project-content .projectbody-head span {
+	float: right;
+}
+#project-body #project-content .projectbody-head span strong {
+	color: #e37006;
+	font-weight: normal;
+}
+#project-body #project-content .projectbody {
+	width: 914px;
+	;
+	margin: 0 auto;
+	padding: 0 31px 31px 31px;
+}
+#project-body #project-content .projectbodyleft {
+	width: 197px;
+	float: left;
+	margin-top: 42px;
+}
+#project-body #project-content .projectbodyleft ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none
+}
+#project-body #project-content .projectbodyleft ul li {
+	font: 14px/41px Calibri;
+	color: #000000;
+	height: 41px;
+	border-top: 1px #fff solid;
+	border-bottom: 1px #d8d8d8 solid
+}
+#project-body #project-content .projectbodyleft ul li a {
+	color: #000000;
+	text-decoration: none
+}
+#project-body #project-content .projectbodyleft ul li a:hover {
+	color: #e37006;
+	text-decoration: none
+}
+#project-body #project-content .projectbodyleft ul li.firstli {
+	background: none;
+	border-top: 1px #d8d8d8 solid;
+	font: bold 18px/33px Calibri;
+	color: #333333;
+	height: 33px;
+}
+#project-body #project-content .projectbodyleft .projectbodyleft-titile {
+	background: none;
+	border-top: 1px #d8d8d8 solid;
+	border-bottom: 1px #d8d8d8 solid;
+	font: bold 18px/33px Calibri;
+	color: #333333;
+	height: 33px;
+}
+#project-body #project-content .projectbodyleft .projectbodyleft-nr {
+	font: 14px/41px Calibri;
+	color: #000000;
+	height: 41px;
+	border-top: 1px #fff solid;
+	border-bottom: 1px #d8d8d8 solid;
+	background: url("../images/submenuli.png") 10px center no-repeat;
+	padding-left: 16px;
+}
+#project-body #project-content .projectbodyleft .projectbodyleft-nr:hover {
+	background: url("../images/submenulihover.png") 10px center no-repeat;
+	padding-left: 16px;
+}
+#project-body #project-content .projectbodyleft .projectbodyleft-nr a:hover {
+	color: #e37006;
+	text-decoration: none;
+}
+#project-body #project-content .projectbodyleft .projectbodyleft-nr-cur {
+	font: 14px/41px Calibri;
+	font-weight: bold;
+	color: #000000;
+	height: 41px;
+	border-top: 1px #fff solid;
+	background: url("../images/submenuli.png") 10px center no-repeat;
+	padding-left: 16px;
+}
+#project-body #project-content .projectbodyleft .projectbodyleft-nr-cur:hover {
+	background: url("../images/submenulihover.png") 10px center no-repeat;
+	padding-left: 16px;
+}
+#project-body #project-content .projectbodyleft .projectbodyleft-nr-cur a:hover {
+	color: #e37006;
+	text-decoration: none
+}
+#project-body #project-content .projectbodyleft .projectbodyleft-nr-child {
+}
+#project-body #project-content .projectbodyleft .projectbodyleft-nr-child ul {
+}
+#project-body #project-content .projectbodyleft .projectbodyleft-nr-child ul li {
+	background: url("../images/project-case/projectbodyleft-nr-child-bg.jpg") no-repeat;
+	font: 11px/32px Calibri;
+	height: 32px;
+}
+#project-body #project-content .projectbodyleft #nr-child-current {
+	height: 32px;
+	background: url("../images/project-case/projectbodyleft-nr-child-bg-cur.jpg") no-repeat !important;
+}
+#project-body #project-content .projectbodyleft #nr-child-current a {
+	color: #e37006;
+}
+#project-body #project-content .projectbodyleft .projectbodyleft-nr-child ul li a {
+	padding-left: 10px;
+}
+#project-body #project-content .projectbodyleft .projectbodyleft-nr-child ul li a:hover {
+	color: #e37006;
+	text-decoration: underline;
+}
+.contentbody .projectbodyright {
+	width: 695px;
+	float: left;
+	margin-left: 22px;
+	margin-top: 0px;
+}
+.contentbody .projectbodyright h2 {
+	font: bold 24px/30px Candara;
+	color: #e37006;
+	padding-bottom: 10px;
+	border-bottom: 2px #e37006 solid;
+	margin-left: 0px;
+}
+.contentbody .projectbodyright .projectbodyright-nr {
+	border-bottom: 1px dashed #999;
+	padding: 15px 0;
+}
+.contentbody .projectbodyright .projectbodyright-pro {
+	height: 127px;
+	margin-top: 10px;
+}
+.contentbody .projectbodyright .projectbodyright-pro .projectbodyright-pro-each {
+	float: left;
+	margin-right: 27px;
+	width: 153px;
+}
+.contentbody .projectbodyright .projectbodyright-pro .projectbodyright-pro-each img {
+	padding: 8px;
+	background: url("../images/project-case/product-bg.jpg") no-repeat;
+}
+.contentbody .projectbodyright .projectbodyright-pro .projectbodyright-pro-each img:hover {
+	background: url("../images/project-case/product-hover-bg.jpg") no-repeat;
+}
+.contentbody .projectbodyright .projectbodyright-pro .projectbodyright-pro-each div {
+	width: 153px;
+	text-align: center;
+	font-weight: bold;
+	height: 30px;
+	line-height: 30px;
+}
+.contentbody .projectbodyright .projectbodyright-pro .projectbodyright-pro-last {
+	float: left;
+	width: 153px;
+}
+.contentbody .projectbodyright .projectbodyright-pro .projectbodyright-pro-last img {
+	padding: 8px;
+	background: url("../images/project-case/product-bg.jpg") no-repeat;
+}
+.contentbody .projectbodyright .projectbodyright-pro .projectbodyright-pro-last img:hover {
+	background: url("../images/project-case/product-hover-bg.jpg") no-repeat;
+}
+.contentbody .projectbodyright .projectbodyright-pro .projectbodyright-pro-last div {
+	width: 153px;
+	text-align: center;
+	font-weight: bold;
+	height: 30px;
+	line-height: 30px;
+}
+.contentbody .projectbodyright .projectbodyright-service {
+	height: 118px;
+	border: 1px solid #e3e3e3;
+}
+.contentbody .projectbodyright .projectbodyright-service img {
+	float: left;
+	margin: 30px 20px;
+}
+.contentbody .projectbodyright .projectbodyright-service .service-text {
+	width: 570px;
+	float: left;
+	padding-top: 10px;
+	margin-left: 0px;
+}
+.contentbody .projectbodyright .projectbodyright-service .service-text strong {
+	color: #1a3c83;
+	font: bold italic 14px/30px Arial;
+}
+.service-contact {
+	float: left;
+	margin-top: 10px;
+	margin-right: 30px;
+}
+.service-contact1 {
+	float: left;
+	margin-top: 10px;
+	margin-right: 30px;
+	background: url("../images/procontacticon_01.png") left center no-repeat;
+	padding-left: 21px;
+	color: #727272;
+}
+.service-contact2 {
+	float: left;
+	margin-top: 10px;
+	margin-right: 30px;
+	background: url("../images/procontacticon_02.png") left center no-repeat;
+	padding-left: 21px;
+	color: #727272;
+}
+.service-contact2:hover {
+	float: left;
+	margin-top: 10px;
+	margin-right: 30px;
+	background: url("../images/procontacticon_02-hover.png") left center no-repeat;
+	padding-left: 21px;
+}
+.service-contact3 {
+	float: left;
+	margin-top: 10px;
+	margin-right: 30px;
+	background: url("../images/procontacticon_03.png") left center no-repeat;
+	color: #727272;
+	padding-left: 21px;
+}
+.service-contact1 a, .service-contact2 a, .service-contact3 a {
+	color: #727272;
+	font: 12px Arial;
+	text-decoration: none
+}
+.service-contact1 a:hover, .service-contact2 a:hover, .service-contact3 a:hover {
+	color: #e37006;
+	font: 12px Arial;
+	text-decoration: none
+}
+.contentbody .projectbodyright .projectbodyright-service .service-contact img {
+	clear: both;
+	margin: 0;
+	padding: 0;
+}
+#project-body #project-content .projectbodyleft div.follows {
+	margin-left: 0px;
+}
+/*project page css end*/
+
+/*exhibiton page css begin*/
+.exhi-note {
+	margin: 20px 0;
+}
+.exhi-each {
+	padding: 15px 18px;
+	width: 282px;
+	height: 183px;
+	float: left;
+	background: url("../images/exhibiton/exhibition-bg.jpg");
+	margin: 5px 3px;
+}
+.exhi-each:hover {
+	padding: 15px 18px;
+	width: 282px;
+	height: 183px;
+	float: left;
+	background: url("../images/exhibiton/exhibition-hover-bg.jpg");
+	cursor: pointer;
+}
+.exhi-img {
+	height: 88px;
+}
+.exhi-text {
+	color: #686868
+}
+.exhi-text p {
+	line-height: 22px;
+	margin: 0px;
+	padding: 0px;
+	line-height: 1.5em
+}
+.exhi-text strong {
+	color: #252525;
+	margin: 0px;
+	padding: 0px;
+	line-height: 1.5em
+}
+.exhi-each-right {
+	padding: 15px 18px;
+	width: 282px;
+	height: 183px;
+	float: left;
+	background: url("../images/exhibiton/exhibition-bg.jpg");
+	margin-left: 14px;
+	margin-bottom: 10px;
+}
+.exhi-each-right:hover {
+	padding: 15px 18px;
+	width: 282px;
+	height: 183px;
+	float: left;
+	background: url("../images/exhibiton/exhibition-hover-bg.jpg");
+	cursor: pointer
+}
+.exhi-each-right .exhi-img {
+	height: 88px;
+}
+.exhi-active-box {
+	width: 400px;
+	height: 191px;
+	background: url("../images/exhibiton/exhibition-active-bg.jpg") repeat-x;
+	padding: 20px 125px;
+}
+/*exhibiton page css end*/
+
+.footer {
+	clear: both;
+	background: url("../images/footbg.png") repeat-x;
+	height: 71px;
+	margin: 0 auto;
+	top: 248px;
+	position: relative;
+}

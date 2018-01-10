@@ -1,0 +1,61 @@
+@charset "utf-8";
+*{margin:0;padding:0;list-style-type:none;}
+a,img{border:0;}
+body{font:12px/180% Arial, Helvetica, sans-serif, "新宋体";}
+/* 幻灯开始*/
+#imgshow_mask{width:100%;position:absolute;z-index:1;background:url(../images/imgshow_mask.png) repeat-x 0 0;height:27px;}
+#imgshow_mask{_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='images/imgshow_mask.png');}
+#imageShow{clear:both;border-bottom:1px solid #fff;}
+#imageShow .imagebg{height:400px;overflow:hidden;position:relative;}
+#imageShow .imagebg li{height:400px;overflow:hidden;position:absolute;top:0;left:0;width:100%;display:block;filter:alpha(opacity=0);opacity:0;}
+#imageShow .imagebg li a.bannerbg_main{width:100%;position:absolute;top:0;right:0;height:400px;display:block;}
+.scrollbg{height:80px;background:#f4f4f4 url(../images/scroll_bg.png) 0 100% repeat-x;}
+.scroll{margin:0 auto;width:960px;height:76px;position:relative;}
+.s_pre, .s_next{display:block;width:48px;height:76px;position:absolute;}
+a.s_pre{background:url(../images/arrow_l.png);top:4px;left:0;}
+a.s_pre:hover{background:url(../images/arrow_l_on.png);}
+a.s_next{background:url(../images/arrow_r.png);top:4px;right:0;}
+a.s_next:hover{background:url(../images/arrow_r_on.png);}
+.outScroll_pic{ height:76px;margin-left:70px;overflow:hidden;position:relative;width:822px;top:2px;}
+.outScroll_pic .scroll_pic{position:absolute}
+.scroll_pic{margin:0 auto;width:40000px;height:76px;}
+.scroll_pic li{float:left;float:left;height:65px;width:145px;margin:5px 9px;_margin:5px 14px 5px 4px;cursor:pointer;background:#000;}
+.scroll_pic li img{filter:alpha(opacity=50);-moz-opacity:0.5;opacity:0.5;}
+.scroll_pic li:hover img,.scroll_pic li:hover{filter:alpha(opacity=100);-moz-opacity:1;opacity:1;}
+.scroll_pic li.currently img{filter:alpha(opacity=100)!important;-moz-opacity:1!important;opacity:1!important;}
+.scroll .current{width:144px;height:65px;border:2px #ff780d solid;background:url(../images/arrow_on.png) 50% -4px no-repeat;z-index:10;position:absolute;top:5px;left:0;}
+/*登录页面：注意加前缀div*/
+.loginPage{background:url(../images/denglu.png);background-position:center center;
+background-size:1114px 629px;
+background-repeat:no-repeat;
+/*moz-background-size:1300px 700px;
+-o-background-size:1300px 700px;*/
+}
+.logoutPage{background:url(../images/tuichu.png);background-position:center center;
+background-size:1114px 629px;
+background-repeat:no-repeat;
+/*moz-background-size:1300px 700px;
+-o-background-size:1300px 700px;*/
+}
+.loginPage .signin{}
+.loginPage .signin {width:477px;height:260px;border:0px solid lightgray;margin:180px auto;
+}
+.loginPage .signin .form-signin {max-width: 330px;padding: 43px 15px 15px 15px;margin: 0 auto;}
+.loginPage .signin .form-signin .form-control {font-size: 16px;height: auto;padding: 10px;}
+.loginPage .signin .form-signin input[type="text"] {margin-bottom: 24px;border-radius: 0;background: url(../images/login_user.png) 0 0 #bdbdbd no-repeat;padding-left:60px;color:#FFFFFF;}
+.loginPage .signin .form-signin input[type="password"] {margin-bottom: 20px;border-radius: 0;background: url(../images/login_pas.png) 0 0 #bdbdbd no-repeat;padding-left:60px;color:#FFFFFF;}
+.loginPage .signin .form-signin button {border-radius: 0;}
+
+#yanzhengma{margin-bottom: 24px;border-radius: 0;padding-left:60px;color:#FFFFFF;}
+/*查看学生信息列表*/
+.adminCheckStuList{margin-top: 20px;}
+
+.logoutPage .signin{}
+.logoutPage .signin {width:477px;height:260px;border:0px solid lightgray;margin:180px auto;
+}
+.logoutPage .signin .form-signin {max-width: 330px;padding: 43px 15px 15px 15px;margin: 0 auto;}
+.logoutPage .signin .form-signin .form-control {font-size: 16px;height: auto;padding: 10px;}
+.logoutPage .signin .form-signin input[type="text"] {margin-bottom: 24px;border-radius: 0;background: url(../images/login_user.png) 0 0 #bdbdbd no-repeat;padding-left:60px;color:#FFFFFF;}
+.logoutPage .signin .form-signin input[type="password"] {margin-bottom: 20px;border-radius: 0;background: url(../images/login_pas.png) 0 0 #bdbdbd no-repeat;padding-left:60px;color:#FFFFFF;}
+.logoutPage .signin .form-signin button {border-radius: 0;}
+

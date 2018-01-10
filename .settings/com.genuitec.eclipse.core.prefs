@@ -1,0 +1,5 @@
+#Thu Jul 14 08:59:26 CST 2016
+eclipse.preferences.version=1
+validator.Checked=WebRoot/js,WebRoot/ckeditor/ckeditor.js
+validator.Revalidate=true
+validator.Unchecked=

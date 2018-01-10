@@ -1,0 +1,296 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>毕业生就业管理系统</title>
+<link href="../css/reset.css" rel="stylesheet" type="text/css" />
+<link href="../css/main.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="../css/style.css" />
+
+<!--导航特效-->
+<script type="text/javascript" src="../js/jquery-1.js"></script>
+<script type="text/javascript" src="../js/smartmenu-min.js"></script>
+<script type="text/javascript">
+	jQuery(window).ready(function() {
+		jQuery("#navigation").Smartmenu({
+			animationDuration : 350
+		});
+	});
+	//SyntaxHighlighter.all();
+</script>
+<!--导航特效-->
+<script language="javascript">
+	var Obj = ''
+	document.onmouseup = MUp
+	document.onmousemove = MMove
+	function MDown(Object) {
+		Obj = Object.id
+		document.all(Obj).setCapture()
+		pX = event.x - document.all(Obj).style.pixelLeft;
+		pY = event.y - document.all(Obj).style.pixelTop;
+	}
+	function MMove() {
+		if (Obj != '') {
+			document.all(Obj).style.left = event.x - pX;
+			document.all(Obj).style.top = event.y - pY;
+		}
+	}
+	function MUp() {
+		if (Obj != '') {
+			document.all(Obj).releaseCapture();
+			Obj = '';
+		}
+	}
+</script>
+
+<style type="text/css">
+#massage_box {
+	position: absolute;
+	background: #fff url("images/lang-headerbg.jpg") repeat-x;
+	left: 300px;
+	top: 49px;
+	width: 775px;
+	height: 486px;
+	filter: dropshadow(color =       #666666, offx =       3, offy =       3,
+		positive = 
+		     2);
+	z-index: 2;
+	visibility: hidden;
+	padding-top: 3px;
+}
+
+#mask {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: expression(body.scrollWidth);
+	height: expression(body.scrollHeight);
+	filter: ALPHA(opacity =       60);
+	z-index: 1;
+	visibility: hidden
+}
+
+.massage {
+	width: 100%;
+	height: 100%;
+	color: #036;
+	font-size: 12px;
+	line-height: 150%
+}
+
+.header {
+	color: #fff
+}
+
+#massage_box ul {
+	margin-right: 25;
+	float: left;
+	display: block;
+}
+
+#massage_box ul li {
+	padding-left: 70px;
+	font: 12px/24px Candara;
+	color: #093079;
+}
+
+#massage_box ul li strong {
+	height: 47px;
+	font: bold 14px/47px Candara;
+	color: #093079
+}
+
+#massage_box ul li a {
+	color: #093079;
+	font: 12px/24px Candara;
+	text-decoration: none;
+	padding-left: 9px;
+}
+
+#massage_box ul li a:hover {
+	color: #e37006;
+	font: 12px/24px Candara;
+	text-decoration: none;
+	background: url("../images/submenulihover.png") left center no-repeat;
+	padding-left: 9px;
+}
+</style>
+</head>
+<body>
+	<div id="head">
+		<div class="headcontent">
+			<div id="sbmlogo"></div>
+			<div>
+				<p>毕业生就业管理系统</p>
+			</div>
+			<div class="topright">
+				<div class="clear"></div>
+				<div id="navigation" class="smartmenu">
+					<ul>
+						<li><a href="index.html" class="current">首页</a></li>
+						<li id=""><a href="zhongxingaikuang.html">中心概况</a>
+							<ul>
+								<li><a href="xianrenlingdao.html">现任领导</a></li>
+								<li><a href="jigoushezhi.html">机构设置</a>
+									<li><a href="gongzuozhize.html">工作职责</a></li>
+							</ul>
+						</li>
+						<li id=""><a href="../government">政策信息</a>
+						</li>
+						<li id=""><a href="../list">招聘信息</a>
+						</li>
+						<li id=""><a href="index.html">用户登录</a>
+							<ul>
+								<li><a href="adminLogin.jsp">管理员登录</a></li>
+								<li><a href="compLogin.jsp">企业登录</a></li>
+								<li><a href="stuLogin.jsp">学生登录</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+
+	<div id="body">
+		<div id="container" style="overflow:hidden;">
+			<div id="imageShow">
+				<div id="imgshow_mask"></div>
+				<ul class="imagebg" id="imagebg">
+				    <li data-sPic="../images/88.png"
+						style="background:#fff url(../images/888.png) center no-repeat;"><a
+						target="blank" 
+						href="http://talent.baidu.com/external/baidu/campus.html" class="bannerbg_main"
+						style="background:url(../images/888.png) 50% 50% no-repeat;"></a></li>
+					<li data-sPic="../images/666.jpg"
+						style="background:#fff url(../images/66.jpg) center no-repeat;"><a
+						target="blank"  href="http://www.nwsuaf.edu.cn" class="bannerbg_main"
+						style="background:url(../images/66.jpg) 50% 50% no-repeat;"></a></li>
+					<li data-sPic="../images/111.jpg"
+						style="background:#fff url(../images/11.jpg) center no-repeat;"><a
+						href="../government" class="bannerbg_main"
+						style="background:url(../images/11.jpg) 50% 50% no-repeat;"></a></li>
+					<li data-sPic="../images/222.jpg"
+						style="background:#fff url(../images/22.jpg) center no-repeat;"><a
+						href="../government" class="bannerbg_main"
+						style="background:url(../images/22.jpg) 50% 50% no-repeat;"></a></li>
+					<li data-sPic="../images/333.jpg"
+						style="background:#fff url(../images/33.jpg) center no-repeat;"><a
+						href="../government" class="bannerbg_main"
+						style="background:url(../images/33.jpg) 50% 50% no-repeat;"></a></li>
+					<li data-sPic="../images/444.jpg"
+						style="background:#fff url(../images/44.jpg) center no-repeat;"><a
+						href="../government" class="bannerbg_main"
+						style="background:url(../images/44.jpg) 50% 50% no-repeat;"></a></li>
+					<li data-sPic="../images/555.jpg"
+						style="background:#fff url(../images/55.jpg) center no-repeat;"><a
+						href="../government" class="bannerbg_main"
+						style="background:url(../images/55.jpg) 50% 50% no-repeat;"></a></li>	
+					<li data-sPic="../images/666.jpg"
+						style="background:#fff url(../images/66.jpg) center no-repeat;"><a
+						href="../government" class="bannerbg_main"
+						style="background:url(../images/66.jpg) 50% 50% no-repeat;"></a></li>
+					<li data-sPic="../images/777.jpg"
+						style="background:#fff url(../images/77.jpg) center no-repeat;"><a
+						href="../government" class="bannerbg_main"
+						style="background:url(../images/77.jpg) 50% 50% no-repeat;"></a></li>				
+				</ul>
+
+
+				<div class="scrollbg">
+					<div class="scroll">
+						<a id="left_img_btn" class="s_pre" href="javascript:void(0)"></a>
+						<div class="current" id="current"></div>
+						<div class="outScroll_pic">
+							<ul class="scroll_pic cls" id="small_pic"></ul>
+						</div>
+						<a id="right_img_btn" class="s_next" href="javascript:void(0)"></a>
+					</div>
+				</div>
+			</div>
+			<script type="text/javascript" src="../js/imgSlider.js"></script>
+			<script type="text/javascript">
+				img.init();
+				img.play(0);
+				//阻止事件冒泡
+				function estop(e) {
+					var e = arguments.callee.caller.arguments[0] || event;
+					if (e && e.stopPropagation) {
+						//因此它支持W3C的stopPropagation()方法
+						e.stopPropagation();
+					} else {
+						//否则，我们需要使用IE的方式来取消事件冒泡
+						window.event.cancelBubble = true;
+						return false;
+					}
+				}
+			</script>
+
+
+		</div>
+
+		<!--首页内容处-->
+		<div class="bottom">
+			<div class="bottomcontent">
+				<div class="bottomcenter">
+					<div class="centerleft">
+						<h2>联系方式</h2>
+						<ul>
+							<li>电话：029-87081151</li>
+							<li>传真：029-87082114</li>
+							<li>地址：陕西杨凌示范区邰城路3号</li>
+							<li>邮编：712100</li>
+							<li>邮箱：jyzx@nwafu.edu.cn</li>
+						</ul>
+					</div>
+					<div class="centerright">
+						<h2>用人单位服务</h2>
+						<ul>
+							<li>上午：8:00-12:00</li>
+							<li>下午：2:00-6:00<br>（节假日除外） 
+							</li>
+							<li>电话：029-87082460</li>
+						</ul>
+					</div>
+					<div class="centerright">
+						<h2>就业指导服务</h2>
+						<ul>
+							<li>上午：8:00-12:00</li>
+							<li>下午：2:00-6:00<br>（节假日除外） 
+							</li>
+							<li>电话：029-87082715</li>
+						</ul>
+					</div>
+					<div class="centerright">
+						<h2>派遣政策咨询</h2>
+						<ul>
+							<li>上午：8:00-12:00</li>
+							<li>下午：2:00-6:00<br>（节假日除外） 
+							</li>
+							<li>电话：029-87081151</li>
+						</ul>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+
+	<!--底部-->
+	<div id="footer">
+		<div class="footercontent">
+			<div class="share">
+				<a href="#" class="top"></a>
+			</div>
+			<div class="links">Copyright © 2016校企实训J2EE-21小组. All rights
+				reserved</div>
+			<div class="clear"></div>
+		</div>
+
+	</div>
+	</div>
+</body>
+</html>
