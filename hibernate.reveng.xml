@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+	<table name="tb_admin" catalog="db_graduate">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="tb_policy" catalog="db_graduate">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+<table name="tb_job" catalog="db_graduate">
+	<primary-key>
+		<generator class="native"></generator>
+	</primary-key>
+</table>
+<table name="tb_company" catalog="db_graduate">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+</hibernate-reverse-engineering>
