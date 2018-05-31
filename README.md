@@ -28,7 +28,7 @@ A information system about graduate students' job.
 3. 审核职位信息。
 4. 管理公告信息。
 5．统计就业信息。
-6. 退出登录。
+6. 退出登录.
 
 
 
