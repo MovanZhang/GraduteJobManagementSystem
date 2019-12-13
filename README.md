@@ -1,11 +1,10 @@
 # GraduteJobManagementSystem
 A information system about graduate students' job.
 Based on the structure of hibernate and spring, the whole system contains three role functions, including graduate student, company and system administrator.
-毕业生就业管理系统 hibernate+spring
-直接导入工程会有 hibernate和spring库jar包冲突的情况，移除冲突jar包后方可使用
-数据库用mysql，恢复工程时直接导进去，建表数据项什么的就都有了
-“毕业生就业管理系统”项目根据用户角色的不同分为3大部分。
-毕业生，企业，管理员,具体功能为：
+
+毕业生就业管理系统 
+系统框架： hibernate+spring
+直接导入工程会有 hibernate和spring库jar包冲突的情况，移除冲突jar包后方可使用。 数据库用mysql，恢复工程时直接导进去，建表数据项什么的就都有了。“毕业生就业管理系统”项目根据用户角色的不同分为3大部分。毕业生，企业，管理员,具体功能为：
 
 在毕业生用户中，功能细分为：
 1. 修改简历信息。
