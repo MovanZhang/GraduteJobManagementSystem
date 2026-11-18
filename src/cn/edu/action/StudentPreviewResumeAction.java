@@ -1,5 +1,12 @@
 package cn.edu.action;
 
+import java.util.Map;
+
+import javax.servlet.http.HttpServletResponse;
+
+import org.apache.struts2.ServletActionContext;
+
+import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 
 import cn.edu.entity.TbStudent;
@@ -29,13 +36,16 @@ public class StudentPreviewResumeAction extends ActionSupport{
 	}
 	
 	public String execute() throws Exception{
+		Map<String, Object> session = ActionContext.getContext().getSession();
+		Object sessionStuId = session.get("session_stuId");
+		if (sessionStuId == null) {
+			ServletActionContext.getResponse().sendError(HttpServletResponse.SC_FORBIDDEN);
+			return NONE;
+		}
+		stuId = sessionStuId.toString();
 		tbStudent=new TbStudent();
 		studentPreviewResume=new StudentPreviewResume();
-		//System.out.println("预览简历见面中的tbStudent的信息"+tbStudent.getStuId());
-		//System.out.println("预览简历见面中的"+stuId);
 		tbStudent=studentPreviewResume.findStuInfo(stuId);
-		//System.out.println("action+"+tbStudent.getStuName());
-		//System.out.println("我要获取的信息是："+tbStudent);
 		return SUCCESS;
 	}
 }
